@@ -35,7 +35,6 @@ Menubuttons() {
                 self SetPers(pers, value);
 
                 self ExecuteFunction(self.menu.func[self.menu.current][self.menu.scroll], self GetPers(pers));
-                self Structure();
                 self LoadMenu(self.menu.current);
             }
 
@@ -50,7 +49,6 @@ Menubuttons() {
                 self SetPers(pers, value);
 
                 self ExecuteFunction(self.menu.func[self.menu.current][self.menu.scroll], self GetPers(pers));
-                self Structure();
                 self LoadMenu(self.menu.current);
             }
 
@@ -65,7 +63,6 @@ Menubuttons() {
                 SetDvar(dvar, value);
 
                 self ExecuteFunction(self.menu.func[self.menu.current][self.menu.scroll], GetDvarFloat(dvar));
-                self Structure();
                 self LoadMenu(self.menu.current); 
             }
 
@@ -80,7 +77,6 @@ Menubuttons() {
                 SetDvar(dvar, value);
 
                 self ExecuteFunction(self.menu.func[self.menu.current][self.menu.scroll], GetDvarFloat(dvar));
-                self Structure();
                 self LoadMenu(self.menu.current); 
             }
 
@@ -95,7 +91,6 @@ Menubuttons() {
 
                 self SetPers("arrayindex_" + arrayname, index);
 
-                self Structure();
                 self LoadMenu(self.menu.current); 
             }
 
@@ -110,7 +105,6 @@ Menubuttons() {
 
                 self SetPers("arrayindex_" + arrayname, index);
 
-                self Structure();
                 self LoadMenu(self.menu.current); 
             }
 
@@ -145,7 +139,6 @@ Menubuttons() {
 
                 if(self GetPers(pers) != "OFF")
                     self ExecuteFunction(self.menu.func[self.menu.current][self.menu.scroll], self GetPers(pers), pers);
-                self Structure();
                 self LoadMenu(self.menu.current);
             }
 
@@ -180,7 +173,6 @@ Menubuttons() {
 
                 if(self GetPers(pers) != "OFF")
                     self ExecuteFunction(self.menu.func[self.menu.current][self.menu.scroll], self GetPers(pers), pers);
-                self Structure();
                 self LoadMenu(self.menu.current);
             }
 
